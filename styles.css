@@ -1,3 +1,12 @@
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.total-content {
+  padding-bottom: 2.5rem;
+}
+
 header {
   text-align: center;
   position: fixed;
@@ -6,7 +15,6 @@ header {
   background-color: #89339e;
   width: 100%;
   color: #df97f1;
-  border: solid #df97f1;
 }
 
 header h1 {
@@ -24,6 +32,7 @@ h2 {
   color: #89339e;
 }
 
+/* cat photo gallery */
 .section-1 {
   padding-top: 90px;
   display: flex;
@@ -31,68 +40,35 @@ h2 {
   align-items: center;
 }
 
+/* cat lists */
 .section-2 {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
 }
 .section-2 h2 {
   text-align: center;
   width: 100%;
 }
-.cats-hate .cats-love {
-  order: 1;
-  width: 50%;
-}
-.cats-hate-list,
-.cats-love-list,
-.lasagna,
-.five-cats {
-  order: 2;
-}
-/*
-.section-2 {
-  display: grid;
-  grid-template-columns: 10em 25em 9em 10em 10em;
-  grid-template-rows: 5em 9em 10em;
-  justify-content: center;
-}
-
-.section-2 h2 {
-  grid-area: 1 / 3;
-  align-self: center;
-  text-align: center;
-}
-
+.cats-hate,
 .cats-love {
-  grid-area: 2 / 1;
-  align-self: self-end;
+  flex-basis: 42%;
 }
-
-.cats-love-list {
-  grid-area: 3 / 1;
-}
-
-.lasagna {
-  grid-area: 2 / 2 / span 1 / span 2;
-}
-
-.cats-hate {
-  grid-area: 2 / 4;
-  align-self: self-end;
-}
-
-.cats-hate-list {
-  grid-area: 3 / 4;
-}
-
-.five-cats {
-  grid-area: 2 / 5 / span 1 / span 2;
-}
-*/
 
 /* form */
 .section-3 {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+
+/* Footer */
+footer {
+  background-color: #89339e;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+  height: 2.5rem;
 }
